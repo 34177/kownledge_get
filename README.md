@@ -144,5 +144,26 @@ crontab -e
 
 ---
 
-*最后更新：2026-03-08*  
+*最后更新：2026-03-10*  
 *维护者：OpenClaw 自动采集系统*
+
+---
+
+## 🔧 当前配置
+
+### Cron 任务
+
+```bash
+# 每天 09:00 执行
+0 9 * * * /home/admin/.openclaw/workspace/scripts/ai-daily-fetch.sh
+```
+
+### 最新报告
+
+- 2026-03-10: ✅ 已生成并推送
+- 2026-03-09: ✅ 已存在
+- 2026-03-08: ✅ 已存在
+
+### GitHub 仓库
+
+https://github.com/34177/kownledge_get
