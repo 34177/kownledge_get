@@ -1,99 +1,69 @@
 {
-  "_comment": "API 技术文档采集源配置",
+  "_comment": "计算机专业书籍采集源",
   "_updated": "2026-03-17",
   
-  "git": [
+  "github": [
     {
-      "name": "React 官方文档",
-      "url": "https://github.com/facebook/react.git",
-      "branch": "main",
-      "paths": ["packages/react.dev/content"],
-      "output": "react-docs.md",
+      "name": "Free Programming Books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "description": "最大的免费编程书籍清单",
       "enabled": true
     },
     {
-      "name": "TypeScript 手册",
-      "url": "https://github.com/microsoft/TypeScript-Website.git",
-      "branch": "v2",
-      "paths": ["packages/typescriptlang-org/src/content"],
-      "output": "typescript-handbook.md",
+      "name": "CS Books Collection",
+      "url": "https://github.com/zzzproject/zzz",
+      "description": "计算机安全书籍合集",
       "enabled": true
     },
     {
-      "name": "Vue.js 文档",
-      "url": "https://github.com/vuejs/docs.git",
-      "branch": "main",
-      "paths": ["src"],
-      "output": "vue-docs.md",
-      "enabled": true
-    },
-    {
-      "name": "Rust 参考",
-      "url": "https://github.com/rust-lang/reference.git",
-      "branch": "master",
-      "paths": ["src"],
-      "output": "rust-reference.md",
+      "name": "GoalKicker Books",
+      "url": "https://github.com/GoalKicker",
+      "description": "编程笔记书籍系列",
       "enabled": true
     }
   ],
   
-  "browser": [
+  "websites": [
     {
-      "name": "MDN Web Docs - JavaScript",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      "selector": "article",
-      "output": "mdn-javascript.md",
-      "enabled": true,
-      "refresh": "weekly"
+      "name": "Open Library",
+      "url": "https://openlibrary.org/subjects/computer_science",
+      "description": "开放图书馆计算机科学类",
+      "enabled": true
     },
     {
-      "name": "MDN Web Docs - API 参考",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API",
-      "selector": "article",
-      "output": "mdn-api.md",
-      "enabled": true,
-      "refresh": "weekly"
+      "name": "Gutenberg Computer Books",
+      "url": "https://www.gutenberg.org/ebooks/bookshelf/14",
+      "description": "公共领域计算机书籍",
+      "enabled": true
     },
     {
-      "name": "OpenAI API 文档",
-      "url": "https://platform.openai.com/docs",
-      "selector": "main",
-      "output": "openai-api.md",
-      "enabled": true,
-      "refresh": "daily"
+      "name": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/",
+      "description": "MIT 开放课程教材",
+      "enabled": true
     },
     {
-      "name": "Anthropic API 文档",
-      "url": "https://docs.anthropic.com/claude/docs",
-      "selector": "main",
-      "output": "anthropic-api.md",
-      "enabled": true,
-      "refresh": "daily"
+      "name": "Open Textbook Library",
+      "url": "https://open.umn.edu/opentextbooks/subjects/computer-science",
+      "description": "明尼苏达开放教材",
+      "enabled": true
     },
     {
-      "name": "Hugging Face Docs",
-      "url": "https://huggingface.co/docs",
-      "selector": "main",
-      "output": "huggingface-docs.md",
-      "enabled": true,
-      "refresh": "weekly"
+      "name": "Internet Archive",
+      "url": "https://archive.org/details/computerbooks",
+      "description": "互联网档案馆计算机书籍",
+      "enabled": true
     }
   ],
   
-  "api": [
-    {
-      "name": "GitHub API - Releases",
-      "endpoint": "https://api.github.com/repos/facebook/react/releases",
-      "auth": false,
-      "output": "github-releases.json",
-      "enabled": true
-    },
-    {
-      "name": "Hugging Face Blog",
-      "endpoint": "https://huggingface.co/api/posts",
-      "auth": false,
-      "output": "hf-blog.json",
-      "enabled": true
-    }
+  "categories": [
+    "algorithms",
+    "programming",
+    "ai-ml",
+    "software-engineering",
+    "database",
+    "network",
+    "system",
+    "security"
   ]
 }

@@ -1,113 +1,69 @@
-# API 技术文档采集系统
+# 计算机专业书籍库
 
-自动采集各大技术平台的 API 文档，支持 Git 仓库、动态网站、API 接口三种采集方式。
+自动采集和整理计算机专业领域的经典书籍（PDF 格式）。
 
-## 🎯 功能特性
+## 📚 收录范围
 
-- **Git 仓库采集** - 克隆并提取 GitHub/GitLab 上的技术文档
-- **动态网站采集** - 使用浏览器自动化抓取 JS 渲染的文档网站
-- **API 接口采集** - 直接调用 REST API 获取结构化数据
-- **定时执行** - 每日自动更新，Git 自动提交推送
-- **统一索引** - 自动生成文档索引和摘要
+- **计算机科学基础** - 算法、数据结构、计算机组成原理
+- **编程语言** - Python, Java, C/C++, JavaScript, Go, Rust 等
+- **人工智能** - 机器学习、深度学习、自然语言处理
+- **软件工程** - 设计模式、架构、测试、DevOps
+- **数据库** - SQL, NoSQL, 分布式系统
+- **网络与安全** - 计算机网络、网络安全、密码学
+- **系统编程** - 操作系统、Linux、编译原理
 
 ## 📁 目录结构
 
 ```
 kownledge_get/
-├── docs/                    # 采集的文档输出
-│   ├── react-docs.md
-│   ├── typescript-handbook.md
-│   ├── mdn-javascript.md
-│   ├── openai-api.md
-│   ├── anthropic-api.md
-│   └── INDEX.md            # 文档索引
-├── sources.json            # 采集源配置
-├── README.md
-└── WORKFLOW.md             # 工作流程说明
+├── books/                    # PDF 书籍存储
+│   ├── algorithms/          # 算法类
+│   ├── programming/         # 编程语言类
+│   ├── ai-ml/              # 人工智能类
+│   ├── software-engineering/ # 软件工程类
+│   ├── database/           # 数据库类
+│   ├── network/            # 网络类
+│   └── system/             # 系统类
+├── sources.json            # 书籍源配置
+├── INDEX.md                # 书籍索引
+└── README.md
 ```
 
-## 🔧 配置采集源
+## 🔄 自动采集
 
-编辑 `sources.json` 添加你的文档源：
+每日自动从以下来源采集新书：
 
-### Git 仓库
-```json
-{
-  "git": [{
-    "name": "React 文档",
-    "url": "https://github.com/facebook/react.git",
-    "branch": "main",
-    "paths": ["packages/react.dev/content"],
-    "output": "react-docs.md",
-    "enabled": true
-  }]
-}
-```
+- GitHub 开源书籍仓库
+- 开放获取教材网站
+- 公共领域书籍库
+- 高校开放课程资源
 
-### 动态网站
-```json
-{
-  "browser": [{
-    "name": "OpenAI API 文档",
-    "url": "https://platform.openai.com/docs",
-    "selector": "main",
-    "output": "openai-api.md",
-    "enabled": true,
-    "refresh": "daily"
-  }]
-}
-```
-
-### API 接口
-```json
-{
-  "api": [{
-    "name": "GitHub Releases",
-    "endpoint": "https://api.github.com/repos/facebook/react/releases",
-    "auth": false,
-    "output": "github-releases.json",
-    "enabled": true
-  }]
-}
-```
-
-## 🚀 使用方式
-
-### 手动执行
-```bash
-/home/admin/.openclaw/workspace/scripts/api-docs-fetch.sh
-```
-
-### 定时任务 (Cron)
-```bash
-# 每天 09:00 执行
-crontab -e
-# 添加：
-0 9 * * * /home/admin/.openclaw/workspace/scripts/api-docs-fetch.sh >> /tmp/api-docs-fetch.log 2>&1
-```
-
-### 查看日志
-```bash
-tail -f /tmp/api-docs-fetch.log
-```
-
-## 📊 支持的文档源
-
-| 类型 | 示例 | 更新频率 |
-|------|------|----------|
-| Git | React, Vue, TypeScript, Rust | 每日 |
-| Browser | MDN, OpenAI, Anthropic, Hugging Face | 每日/每周 |
-| API | GitHub Releases, HF Blog | 每日 |
-
-## 🔐 认证配置
-
-对于需要认证的 API，在 `sources.json` 中设置 `"auth": true`，然后在脚本中配置环境变量：
+## 📖 使用方式
 
 ```bash
-export GITHUB_TOKEN="your_token"
-export HUGGINGFACE_TOKEN="your_token"
+# 手动触发采集
+/home/admin/.openclaw/workspace/scripts/cs-books-fetch.sh
+
+# 查看日志
+tail -f /tmp/cs-books-fetch.log
 ```
 
-## 📝 许可证
+## 📋 书籍索引
 
-MIT
+详见 [INDEX.md](./INDEX.md)
+
+## ⚠️ 版权说明
+
+本仓库仅收录：
+- 开放获取 (Open Access) 书籍
+- 公共领域 (Public Domain) 书籍
+- Creative Commons 许可书籍
+- 作者明确允许分发的书籍
+
+## 🤝 贡献
+
+欢迎提交书籍推荐或资源链接。
+
+## 📄 许可证
+
+各书籍遵循其原有许可证
