@@ -1,58 +1,63 @@
 {
-  "_comment": "计算机专业书籍采集源",
-  "_updated": "2026-03-17",
+  "_comment": "API 技术文档采集源配置",
+  "_updated": "2026-03-18",
   
-  "github": [
+  "git": [
     {
-      "name": "Free Programming Books",
-      "url": "https://github.com/EbookFoundation/free-programming-books",
-      "description": "最大的免费编程书籍清单",
-      "enabled": true
+      "name": "React 官方文档",
+      "url": "https://github.com/reactjs/react.dev.git",
+      "description": "React 官方文档仓库",
+      "enabled": true,
+      "branch": "main",
+      "paths": ["src/content/docs"],
+      "output": "react-docs.md"
     },
     {
-      "name": "CS Books Collection",
-      "url": "https://github.com/zzzproject/zzz",
-      "description": "计算机安全书籍合集",
-      "enabled": true
-    },
-    {
-      "name": "GoalKicker Books",
-      "url": "https://github.com/GoalKicker",
-      "description": "编程笔记书籍系列",
-      "enabled": true
+      "name": "TypeScript Handbook",
+      "url": "https://github.com/microsoft/TypeScript-Website.git",
+      "description": "TypeScript 官方手册",
+      "enabled": true,
+      "branch": "v2",
+      "paths": ["packages/typescriptlang-org/src/copy"],
+      "output": "typescript-handbook.md"
     }
   ],
   
-  "websites": [
+  "browser": [
     {
-      "name": "Open Library",
-      "url": "https://openlibrary.org/subjects/computer_science",
-      "description": "开放图书馆计算机科学类",
-      "enabled": true
+      "name": "MDN JavaScript",
+      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript",
+      "description": "MDN JavaScript 参考",
+      "enabled": true,
+      "selector": "article",
+      "output": "mdn-javascript.md"
     },
     {
-      "name": "Gutenberg Computer Books",
-      "url": "https://www.gutenberg.org/ebooks/bookshelf/14",
-      "description": "公共领域计算机书籍",
-      "enabled": true
+      "name": "OpenAI API Docs",
+      "url": "https://platform.openai.com/docs",
+      "description": "OpenAI API 文档",
+      "enabled": true,
+      "selector": "main",
+      "output": "openai-api.md"
     },
     {
-      "name": "MIT OpenCourseWare",
-      "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/",
-      "description": "MIT 开放课程教材",
-      "enabled": true
-    },
+      "name": "Anthropic API Docs",
+      "url": "https://docs.anthropic.com",
+      "description": "Anthropic API 文档",
+      "enabled": true,
+      "selector": "body",
+      "output": "anthropic-api.md"
+    }
+  ],
+  
+  "api": [
     {
-      "name": "Open Textbook Library",
-      "url": "https://open.umn.edu/opentextbooks/subjects/computer-science",
-      "description": "明尼苏达开放教材",
-      "enabled": true
-    },
-    {
-      "name": "Internet Archive",
-      "url": "https://archive.org/details/computerbooks",
-      "description": "互联网档案馆计算机书籍",
-      "enabled": true
+      "name": "Hugging Face Blog",
+      "endpoint": "https://huggingface.co/api/blog",
+      "description": "HF 博客文章列表",
+      "enabled": true,
+      "output": "hf-blog.json",
+      "auth": false
     }
   ],
   
