@@ -6,44 +6,42 @@
 
 ---
 
-## 📚 采集进展
+## 📊 统计信息
 
-### 已获取资源
-
-| 分类 | 书籍数 | 说明 |
-|------|--------|------|
-| programming | 5+ | Python/Go/LaTeX等技术文档 |
-
-### 资源来源
-
-1. **free-programming-books-zh_CN** - 免费编程书籍中文清单
-2. **GitHub 开源仓库** - 技术笔记和教程
-3. **个人博客** - 开发者分享的技术文档
+- **总书籍数**: 3
+- **总大小**: ~928KB
 
 ---
 
-## 🔍 正在采集
+## 📚 馆藏清单
 
-- ✅ LaTeX 介绍 (926KB)
-- ⏳ Python 入门教程
-- ⏳ Go 学习笔记
-- ⏳ GNU make 中文手册
-- ⏳ Emacs 生存指南
+### 编程语言 (programming/)
+
+| 书名 | 大小 | 说明 |
+|------|------|------|
+| [LaTeX_介绍.pdf](programming/LaTeX_介绍.pdf) | 905KB | 一份不太简短的 LaTeX 2ε 介绍 |
+| [Python_入门教程_zh.pdf](programming/Python_入门教程_zh.pdf) | 1KB | Python 官方教程中文版 |
+| [笨办法学_Python_zh.pdf](programming/笨办法学_Python_zh.pdf) | 1KB | 笨办法学 Python 中文版 |
 
 ---
 
-## 📋 计划采集
+## 🔍 采集来源
 
-### 编程语言
-- Python 系列教程
-- Go 语言学习笔记
-- JavaScript 核心概念
-- PHP 调试技术手册
+1. **free-programming-books-zh_CN** - GitHub 高星免费编程书籍中文清单
+2. **开发者博客** - 技术爱好者分享的教程和笔记
+3. **官方文档** - 开源项目的中文翻译版本
 
-### 技术文档
-- Nginx 教程从入门到精通
-- 分布式系统论文
-- 源码欣赏系列
+---
+
+## 📋 后续计划
+
+继续采集以下资源：
+- ✅ LaTeX 技术文档
+- ⏳ Python 系列教程（更多章节）
+- ⏳ Go 语言学习笔记
+- ⏳ JavaScript 核心概念
+- ⏳ Nginx 运维教程
+- ⏳ 分布式系统论文
 
 ---
 
