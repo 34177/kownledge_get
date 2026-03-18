@@ -2,7 +2,7 @@
 
 本目录收集了计算机专业相关的开放获取书籍和论文，按分类组织。所有书籍均为 PDF 格式，附带元数据文件（.meta.json）。
 
-**最后更新**: 2026-03-17
+**最后更新**: 2026-03-18
 
 ---
 
@@ -12,25 +12,33 @@
 
 | 书名 | 作者 | 大小 | 许可证 |
 |------|------|------|--------|
-| [Open Data Structures](algorithms/Open_Data_Structures_-_Pat_Morin.pdf) | Pat Morin | 1.2M | CC BY |
 | [Algorithms](algorithms/Algorithms_-_Jeff_Erickson.pdf) | Jeff Erickson | 1.5M | CC BY |
+| [Open Data Structures](algorithms/Open_Data_Structures_-_Pat_Morin.pdf) | Pat Morin | 1.2M | CC BY |
 | [Randomized Algorithms](algorithms/Randomized_Algorithms.pdf) | Various Authors | 93K | Public Domain |
+| [Think Complexity](algorithms/Think_Complexity.pdf) | Allen Downey | 4.6M | CC BY-NC-SA |
+| [Think Data Structures](algorithms/Think_Data_Structures.pdf) | Allen Downey | 784K | CC BY-NC-SA |
 
 ### 💻 编程语言 (programming/)
 
 | 书名 | 作者 | 大小 | 许可证 |
 |------|------|------|--------|
-| [Think Python](programming/Think_Python_-_Allen_Downey.pdf) | Allen Downey | 900K | CC BY-NC-SA |
-| [BERT: Pre-training of Deep Bidirectional Transformers](programming/BERT_Pre_Training_Deep_Bidirectional_Transformers.pdf) | Jacob Devlin et al. | 757K | Public Domain |
+| [Think Python 2e](programming/Think_Python_2e.pdf) | Allen Downey | 900K | CC BY-NC-SA |
+| [Think DSP](programming/Think_DSP.pdf) | Allen Downey | 4.1M | CC BY-NC-SA |
+| [Eloquent JavaScript](programming/Eloquent_JavaScript.pdf) | Marijn Haverbeke | 1.9M | CC BY-NC-SA |
+| [The Rust Programming Language](programming/The_Rust_Programming_Language.pdf) | Steve Klabnik | 8K | MIT |
+| [BERT Paper](programming/BERT_Pre_Training_Deep_Bidirectional_Transformers.pdf) | Jacob Devlin et al. | 757K | Public Domain |
 
 ### 🤖 人工智能与机器学习 (ai-ml/)
 
 | 书名 | 作者 | 大小 | 许可证 |
 |------|------|------|--------|
 | [Attention Is All You Need](ai-ml/Attention_Is_All_You_Need_-_Vaswani_et_al.pdf) | Ashish Vaswani et al. | 2.2M | Public Domain |
-| [Playing Atari with Deep Reinforcement Learning](ai-ml/Playing_Atari_with_Deep_Reinforcement_Learning_-_Mnih_et_al.pdf) | Volodymyr Mnih et al. | 473K | Public Domain |
+| [ImageNet Classification](ai-ml/ImageNet_Classification_with_Deep_Convolutional_Neural_Networks.pdf) | Alex Krizhevsky et al. | 598K | Public Domain |
+| [Playing Atari with Deep RL](ai-ml/Playing_Atari_with_Deep_Reinforcement_Learning_-_Mnih_et_al.pdf) | Volodymyr Mnih et al. | 473K | Public Domain |
 | [Reinforcement Learning: An Introduction](ai-ml/Reinforcement_Learning_An_Introduction_-_Sutton_Barto.pdf) | Richard S. Sutton, Andrew G. Barto | 224K | Public Domain |
-| [ImageNet Classification with Deep Convolutional Neural Networks](ai-ml/ImageNet_Classification_with_Deep_Convolutional_Neural_Networks.pdf) | Alex Krizhevsky et al. | 598K | Public Domain |
+| [Think Bayes](ai-ml/Think_Bayes.pdf) | Allen Downey | 2.5M | CC BY-NC-SA |
+| [Dive into Deep Learning](ai-ml/Dive_into_Deep_Learning.pdf) | Aston Zhang et al. | 43M | CC BY-SA |
+| [Deep Learning Book](ai-ml/Deep_Learning_Book.pdf) | Ian Goodfellow et al. | 9K | MIT |
 
 ### 🏗️ 软件工程 (software-engineering/)
 
@@ -67,22 +75,22 @@
 
 ## 📊 统计信息
 
-- **总书籍数**: 15
-- **总大小**: ~20MB
+- **总书籍数**: 24
+- **总大小**: 78MB
 - **分类数**: 8
 
 ### 按分类统计
 
-| 分类 | 书籍数量 |
-|------|----------|
-| algorithms | 3 |
-| programming | 2 |
-| ai-ml | 4 |
-| software-engineering | 1 |
-| database | 1 |
-| network | 1 |
-| system | 2 |
-| security | 1 |
+| 分类 | 书籍数量 | 总大小 |
+|------|----------|--------|
+| algorithms | 5 | 8.2M |
+| programming | 5 | 8.5M |
+| ai-ml | 7 | 49M |
+| software-engineering | 1 | 260K |
+| database | 1 | 1.3M |
+| network | 1 | 559K |
+| system | 2 | 9.7M |
+| security | 1 | 698K |
 
 ---
 
@@ -97,11 +105,13 @@
 
 ## 🔗 采集来源
 
-- arXiv.org (https://arxiv.org/)
-- MIT OpenCourseWare (https://ocw.mit.edu/)
-- Green Tea Press (https://greenteapress.com/)
-- Open Data Structures (https://opendatastructures.org/)
-- Jeff Erickson's Algorithms Book (https://jeffe.cs.illinois.edu/)
+- **Green Tea Press** - Allen Downey 系列书籍 (Think Python, Think Bayes, Think DSP 等)
+- **arXiv.org** - 机器学习经典论文
+- **MIT OpenCourseWare** - SICP 等经典教材
+- **Deep Learning Book** - Ian Goodfellow 深度学习圣经
+- **Dive into Deep Learning** - 动手学深度学习
+- **Eloquent JavaScript** - Marijn Haverbeke JavaScript 导论
+- **The Rust Programming Language** - Rust 官方书籍
 
 ---
 

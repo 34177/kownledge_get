@@ -1,6 +1,247 @@
 {
-  "_comment": "API 技术文档采集源配置",
+  "_comment": "计算机书籍与技术文档采集源配置",
   "_updated": "2026-03-18",
+  
+  "books": {
+    "_comment": "计算机专业书籍采集源",
+    "github_repos": [
+      {
+        "name": "Free Programming Books",
+        "url": "https://github.com/EbookFoundation/free-programming-books",
+        "description": "GitHub 最大的免费编程书籍清单",
+        "enabled": true,
+        "category": "all"
+      },
+      {
+        "name": "CS Books",
+        "url": "https://github.com/zzzproject/zzz",
+        "description": "计算机安全书籍合集",
+        "enabled": true,
+        "category": "security"
+      },
+      {
+        "name": "GoalKicker Programming Notes",
+        "url": "https://github.com/GoalKicker",
+        "description": "编程笔记书籍系列（C#, Java, Python 等）",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Teach Yourself CS",
+        "url": "https://github.com/ossu/computer-science",
+        "description": "自学计算机科学完整指南",
+        "enabled": true,
+        "category": "all"
+      },
+      {
+        "name": "Programming Books",
+        "url": "https://github.com/ruanyf/free-docs",
+        "description": "阮一峰整理的免费技术书籍",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Go Books",
+        "url": "https://github.com/dariubs/GoBooks",
+        "description": "Go 语言书籍列表",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Rust Books",
+        "url": "https://github.com/sger/RustBooks",
+        "description": "Rust 语言书籍列表",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Awesome CS Bookshelf",
+        "url": "https://github.com/joebew42/awesome-cs-bookshelf",
+        "description": "计算机科学经典书籍",
+        "enabled": true,
+        "category": "all"
+      },
+      {
+        "name": "You Don't Know JS",
+        "url": "https://github.com/getify/You-Dont-Know-JS",
+        "description": "JavaScript 深入系列",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "YDKJS Book PDFs",
+        "url": "https://github.com/getify/You-Dont-Know-JS",
+        "description": "YDKJS 书籍 PDF 版本",
+        "enabled": true,
+        "category": "programming"
+      }
+    ],
+    "websites": [
+      {
+        "name": "OpenStax Computer Science",
+        "url": "https://openstax.org/subjects/computer-science",
+        "description": "开放大学教材",
+        "enabled": true,
+        "category": "all"
+      },
+      {
+        "name": "Green Tea Press",
+        "url": "https://greenteapress.com/",
+        "description": "Allen Downey 免费编程书籍",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Open Data Structures",
+        "url": "https://opendatastructures.org/",
+        "description": "开源数据结构教材",
+        "enabled": true,
+        "category": "algorithms"
+      },
+      {
+        "name": "Jeff Erickson Algorithms",
+        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/book/",
+        "description": "UIUC 算法教材",
+        "enabled": true,
+        "category": "algorithms"
+      },
+      {
+        "name": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/",
+        "description": "MIT 开放课程教材",
+        "enabled": true,
+        "category": "all"
+      },
+      {
+        "name": "OSTEP Operating Systems",
+        "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/",
+        "description": "操作系统导论",
+        "enabled": true,
+        "category": "system"
+      },
+      {
+        "name": "Deep Learning Book",
+        "url": "https://www.deeplearningbook.org/",
+        "description": "深度学习圣经",
+        "enabled": true,
+        "category": "ai-ml"
+      },
+      {
+        "name": "Dive into Deep Learning",
+        "url": "https://d2l.ai/",
+        "description": "动手学深度学习",
+        "enabled": true,
+        "category": "ai-ml"
+      }
+    ],
+    "pdf_direct": [
+      {
+        "name": "Think Python 2e",
+        "pdf_url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "description": "Python 编程入门 - Allen Downey",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Think Data Structures",
+        "pdf_url": "https://greenteapress.com/thinkdast/thinkdast.pdf",
+        "description": "数据结构入门 - Allen Downey",
+        "enabled": true,
+        "category": "algorithms"
+      },
+      {
+        "name": "Think Bayes",
+        "pdf_url": "https://greenteapress.com/thinkbayes/thinkbayes.pdf",
+        "description": "贝叶斯统计学 - Allen Downey",
+        "enabled": true,
+        "category": "ai-ml"
+      },
+      {
+        "name": "Think Complexity",
+        "pdf_url": "https://greenteapress.com/complexity2/thinkcomplexity2.pdf",
+        "description": "复杂性科学 - Allen Downey",
+        "enabled": true,
+        "category": "algorithms"
+      },
+      {
+        "name": "Think DSP",
+        "pdf_url": "https://greenteapress.com/thinkdsp/thinkdsp.pdf",
+        "description": "数字信号处理 - Allen Downey",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Dive into Deep Learning",
+        "pdf_url": "https://d2l.ai/d2l-en.pdf",
+        "description": "动手学深度学习",
+        "enabled": true,
+        "category": "ai-ml"
+      },
+      {
+        "name": "Deep Learning Book",
+        "pdf_url": "https://www.deeplearningbook.org/contents/frontmatter.pdf",
+        "description": "深度学习圣经 - Ian Goodfellow",
+        "enabled": true,
+        "category": "ai-ml"
+      },
+      {
+        "name": "The Rust Programming Language",
+        "pdf_url": "https://doc.rust-lang.org/book/book.pdf",
+        "description": "Rust 官方书籍",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Eloquent JavaScript",
+        "pdf_url": "https://eloquentjavascript.net/Eloquent_JavaScript.pdf",
+        "description": "JavaScript 编程导论",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "SICP",
+        "pdf_url": "https://sarabander.github.io/sicp/sicp.pdf",
+        "description": "计算机程序的构造和解释",
+        "enabled": true,
+        "category": "programming"
+      },
+      {
+        "name": "Operating Systems Three Easy Pieces",
+        "pdf_url": "http://pages.cs.wisc.edu/~remzi/OSTEP/osep.pdf",
+        "description": "操作系统导论",
+        "enabled": true,
+        "category": "system"
+      },
+      {
+        "name": "Algorithms Jeff Erickson",
+        "pdf_url": "https://jeffe.cs.illinois.edu/teaching/algorithms/book/Algorithms-JeffE.pdf",
+        "description": "UIUC 算法教材",
+        "enabled": true,
+        "category": "algorithms"
+      },
+      {
+        "name": "Open Data Structures",
+        "pdf_url": "https://opendatastructures.org/ods-java/ods-java.pdf",
+        "description": "开源数据结构教材",
+        "enabled": true,
+        "category": "algorithms"
+      },
+      {
+        "name": "Computer Networks Tanenbaum",
+        "pdf_url": "https://www.cs.vu.nl/~t/CN-5E-Cover.pdf",
+        "description": "计算机网络经典教材封面",
+        "enabled": true,
+        "category": "network"
+      },
+      {
+        "name": "Designing Data-Intensive Applications",
+        "pdf_url": "https://dataintensive.net/ddia.pdf",
+        "description": "数据密集型应用系统设计",
+        "enabled": true,
+        "category": "database"
+      }
+    ]
+  },
   
   "git": [
     {
