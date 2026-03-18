@@ -1,306 +1,145 @@
 {
-  "_comment": "计算机书籍与技术文档采集源配置",
+  "_comment": "中文计算机书籍与技术文档采集源配置",
   "_updated": "2026-03-18",
   
   "books": {
-    "_comment": "计算机专业书籍采集源",
+    "_comment": "中文计算机专业书籍采集源",
     "github_repos": [
       {
-        "name": "Free Programming Books",
-        "url": "https://github.com/EbookFoundation/free-programming-books",
-        "description": "GitHub 最大的免费编程书籍清单",
+        "name": "CS-Books 计算机技术书籍",
+        "url": "https://github.com/huihut/CS-Books",
+        "description": "计算机技术类书籍 PDF 合集",
         "enabled": true,
         "category": "all"
       },
       {
-        "name": "CS Books",
-        "url": "https://github.com/zzzproject/zzz",
-        "description": "计算机安全书籍合集",
-        "enabled": true,
-        "category": "security"
-      },
-      {
-        "name": "GoalKicker Programming Notes",
-        "url": "https://github.com/GoalKicker",
-        "description": "编程笔记书籍系列（C#, Java, Python 等）",
-        "enabled": true,
-        "category": "programming"
-      },
-      {
-        "name": "Teach Yourself CS",
-        "url": "https://github.com/ossu/computer-science",
-        "description": "自学计算机科学完整指南",
+        "name": "小齐精选计算机书籍",
+        "url": "https://github.com/xiaoqi6666/CS_Books",
+        "description": "小齐精选计算机类书籍 PDF",
         "enabled": true,
         "category": "all"
       },
       {
-        "name": "Programming Books",
-        "url": "https://github.com/ruanyf/free-docs",
-        "description": "阮一峰整理的免费技术书籍",
+        "name": "图灵社区免费书",
+        "url": "https://github.com/figroc/free-programming-books-zh_CN",
+        "description": "免费的中文编程书籍",
         "enabled": true,
         "category": "programming"
       },
       {
-        "name": "Go Books",
-        "url": "https://github.com/dariubs/GoBooks",
-        "description": "Go 语言书籍列表",
-        "enabled": true,
-        "category": "programming"
-      },
-      {
-        "name": "Rust Books",
-        "url": "https://github.com/sger/RustBooks",
-        "description": "Rust 语言书籍列表",
-        "enabled": true,
-        "category": "programming"
-      },
-      {
-        "name": "Awesome CS Bookshelf",
-        "url": "https://github.com/joebew42/awesome-cs-bookshelf",
-        "description": "计算机科学经典书籍",
+        "name": "图灵程序设计丛书",
+        "url": "https://github.com/loremwalker/CS-Book",
+        "description": "计算机专业书籍",
         "enabled": true,
         "category": "all"
-      },
-      {
-        "name": "You Don't Know JS",
-        "url": "https://github.com/getify/You-Dont-Know-JS",
-        "description": "JavaScript 深入系列",
-        "enabled": true,
-        "category": "programming"
-      },
-      {
-        "name": "YDKJS Book PDFs",
-        "url": "https://github.com/getify/You-Dont-Know-JS",
-        "description": "YDKJS 书籍 PDF 版本",
-        "enabled": true,
-        "category": "programming"
       }
     ],
     "websites": [
       {
-        "name": "OpenStax Computer Science",
-        "url": "https://openstax.org/subjects/computer-science",
-        "description": "开放大学教材",
+        "name": "图灵社区",
+        "url": "https://www.ituring.com.cn/book",
+        "description": "图灵社区技术书籍",
         "enabled": true,
         "category": "all"
       },
       {
-        "name": "Green Tea Press",
-        "url": "https://greenteapress.com/",
-        "description": "Allen Downey 免费编程书籍",
+        "name": "阮一峰网络日志",
+        "url": "https://www.ruanyifeng.com/blog/",
+        "description": "技术文档与教程",
         "enabled": true,
         "category": "programming"
       },
       {
-        "name": "Open Data Structures",
-        "url": "https://opendatastructures.org/",
-        "description": "开源数据结构教材",
+        "name": "廖雪峰官方网站",
+        "url": "https://www.liaoxuefeng.com/",
+        "description": "Python、Git、Java 等教程",
         "enabled": true,
-        "category": "algorithms"
+        "category": "programming"
       },
       {
-        "name": "Jeff Erickson Algorithms",
-        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/book/",
-        "description": "UIUC 算法教材",
+        "name": "菜鸟教程",
+        "url": "https://www.runoob.com/",
+        "description": "编程入门教程",
         "enabled": true,
-        "category": "algorithms"
+        "category": "programming"
       },
       {
-        "name": "MIT OpenCourseWare",
-        "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/",
-        "description": "MIT 开放课程教材",
+        "name": "掘金小册",
+        "url": "https://juejin.cn/book",
+        "description": "技术小册",
         "enabled": true,
         "category": "all"
-      },
-      {
-        "name": "OSTEP Operating Systems",
-        "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/",
-        "description": "操作系统导论",
-        "enabled": true,
-        "category": "system"
-      },
-      {
-        "name": "Deep Learning Book",
-        "url": "https://www.deeplearningbook.org/",
-        "description": "深度学习圣经",
-        "enabled": true,
-        "category": "ai-ml"
-      },
-      {
-        "name": "Dive into Deep Learning",
-        "url": "https://d2l.ai/",
-        "description": "动手学深度学习",
-        "enabled": true,
-        "category": "ai-ml"
       }
     ],
     "pdf_direct": [
       {
-        "name": "Think Python 2e",
-        "pdf_url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
-        "description": "Python 编程入门 - Allen Downey",
+        "name": "Python 编程：从入门到实践",
+        "pdf_url": "https://github.com/Programming-Books-Club/Python-Programming-From-Introduction-to-Practice/raw/main/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B5.pdf",
+        "description": "Python 入门经典",
         "enabled": true,
         "category": "programming"
-      },
-      {
-        "name": "Think Data Structures",
-        "pdf_url": "https://greenteapress.com/thinkdast/thinkdast.pdf",
-        "description": "数据结构入门 - Allen Downey",
-        "enabled": true,
-        "category": "algorithms"
-      },
-      {
-        "name": "Think Bayes",
-        "pdf_url": "https://greenteapress.com/thinkbayes/thinkbayes.pdf",
-        "description": "贝叶斯统计学 - Allen Downey",
-        "enabled": true,
-        "category": "ai-ml"
-      },
-      {
-        "name": "Think Complexity",
-        "pdf_url": "https://greenteapress.com/complexity2/thinkcomplexity2.pdf",
-        "description": "复杂性科学 - Allen Downey",
-        "enabled": true,
-        "category": "algorithms"
-      },
-      {
-        "name": "Think DSP",
-        "pdf_url": "https://greenteapress.com/thinkdsp/thinkdsp.pdf",
-        "description": "数字信号处理 - Allen Downey",
-        "enabled": true,
-        "category": "programming"
-      },
-      {
-        "name": "Dive into Deep Learning",
-        "pdf_url": "https://d2l.ai/d2l-en.pdf",
-        "description": "动手学深度学习",
-        "enabled": true,
-        "category": "ai-ml"
-      },
-      {
-        "name": "Deep Learning Book",
-        "pdf_url": "https://www.deeplearningbook.org/contents/frontmatter.pdf",
-        "description": "深度学习圣经 - Ian Goodfellow",
-        "enabled": true,
-        "category": "ai-ml"
-      },
-      {
-        "name": "The Rust Programming Language",
-        "pdf_url": "https://doc.rust-lang.org/book/book.pdf",
-        "description": "Rust 官方书籍",
-        "enabled": true,
-        "category": "programming"
-      },
-      {
-        "name": "Eloquent JavaScript",
-        "pdf_url": "https://eloquentjavascript.net/Eloquent_JavaScript.pdf",
-        "description": "JavaScript 编程导论",
-        "enabled": true,
-        "category": "programming"
-      },
-      {
-        "name": "SICP",
-        "pdf_url": "https://sarabander.github.io/sicp/sicp.pdf",
-        "description": "计算机程序的构造和解释",
-        "enabled": true,
-        "category": "programming"
-      },
-      {
-        "name": "Operating Systems Three Easy Pieces",
-        "pdf_url": "http://pages.cs.wisc.edu/~remzi/OSTEP/osep.pdf",
-        "description": "操作系统导论",
-        "enabled": true,
-        "category": "system"
-      },
-      {
-        "name": "Algorithms Jeff Erickson",
-        "pdf_url": "https://jeffe.cs.illinois.edu/teaching/algorithms/book/Algorithms-JeffE.pdf",
-        "description": "UIUC 算法教材",
-        "enabled": true,
-        "category": "algorithms"
-      },
-      {
-        "name": "Open Data Structures",
-        "pdf_url": "https://opendatastructures.org/ods-java/ods-java.pdf",
-        "description": "开源数据结构教材",
-        "enabled": true,
-        "category": "algorithms"
-      },
-      {
-        "name": "Computer Networks Tanenbaum",
-        "pdf_url": "https://www.cs.vu.nl/~t/CN-5E-Cover.pdf",
-        "description": "计算机网络经典教材封面",
-        "enabled": true,
-        "category": "network"
-      },
-      {
-        "name": "Designing Data-Intensive Applications",
-        "pdf_url": "https://dataintensive.net/ddia.pdf",
-        "description": "数据密集型应用系统设计",
-        "enabled": true,
-        "category": "database"
       }
     ]
   },
   
   "git": [
     {
-      "name": "React 官方文档",
-      "url": "https://github.com/reactjs/react.dev.git",
-      "description": "React 官方文档仓库",
+      "name": "React 中文文档",
+      "url": "https://github.com/reactjs/zh-hans.reactjs.org.git",
+      "description": "React 官方中文文档",
       "enabled": true,
       "branch": "main",
       "paths": ["src/content/docs"],
-      "output": "react-docs.md"
+      "output": "react-docs-zh.md"
     },
     {
-      "name": "TypeScript Handbook",
+      "name": "TypeScript 中文文档",
       "url": "https://github.com/microsoft/TypeScript-Website.git",
-      "description": "TypeScript 官方手册",
+      "description": "TypeScript 官方文档",
       "enabled": true,
       "branch": "v2",
-      "paths": ["packages/typescriptlang-org/src/copy"],
-      "output": "typescript-handbook.md"
+      "paths": ["packages/typescriptlang-org/src/copy/zh"],
+      "output": "typescript-handbook-zh.md"
+    },
+    {
+      "name": "MDN 中文文档",
+      "url": "https://github.com/mdn/translated-content.git",
+      "description": "MDN Web 文档中文翻译",
+      "enabled": true,
+      "branch": "main",
+      "paths": ["files/zh-cn"],
+      "output": "mdn-zh-docs.md"
     }
   ],
   
   "browser": [
     {
-      "name": "MDN JavaScript",
-      "url": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript",
-      "description": "MDN JavaScript 参考",
+      "name": "阮一峰 ES6 教程",
+      "url": "https://es6.ruanyifeng.com/",
+      "description": "ECMAScript 6 入门",
       "enabled": true,
       "selector": "article",
-      "output": "mdn-javascript.md"
+      "output": "es6-tutorial.md"
     },
     {
-      "name": "OpenAI API Docs",
-      "url": "https://platform.openai.com/docs",
-      "description": "OpenAI API 文档",
+      "name": "廖雪峰 Python 教程",
+      "url": "https://www.liaoxuefeng.com/wiki/1016959663602400",
+      "description": "Python 入门教程",
       "enabled": true,
-      "selector": "main",
-      "output": "openai-api.md"
+      "selector": ".x-card-content",
+      "output": "python-tutorial.md"
     },
     {
-      "name": "Anthropic API Docs",
-      "url": "https://docs.anthropic.com",
-      "description": "Anthropic API 文档",
+      "name": "廖雪峰 Git 教程",
+      "url": "https://www.liaoxuefeng.com/wiki/896043488029600",
+      "description": "Git 版本控制教程",
       "enabled": true,
-      "selector": "body",
-      "output": "anthropic-api.md"
+      "selector": ".x-card-content",
+      "output": "git-tutorial.md"
     }
   ],
   
-  "api": [
-    {
-      "name": "Hugging Face Blog",
-      "endpoint": "https://huggingface.co/api/blog",
-      "description": "HF 博客文章列表",
-      "enabled": true,
-      "output": "hf-blog.json",
-      "auth": false
-    }
-  ],
+  "api": [],
   
   "categories": [
     "algorithms",
